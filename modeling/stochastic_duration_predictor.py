@@ -1,5 +1,8 @@
+import sys
+sys.path.append("..")
+
 import torch.nn as nn
-from .. import modules
+import modules
 import torch
 import math
 
