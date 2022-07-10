@@ -9,8 +9,9 @@ from .residual_coupling_block import ResidualCouplingBlock
 from .stochastic_duration_predictor import DurationPredictor, StochasticDurationPredictor
 
 ## File to be added
-from .. import monotoinc_align
-from .. import commons
+import sys
+sys.path.append("..")
+import monotoinc_align, commons
 
 
 class SynthesizerTrn(nn.Module):
