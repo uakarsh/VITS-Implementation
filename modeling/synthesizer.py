@@ -11,7 +11,7 @@ from .stochastic_duration_predictor import DurationPredictor, StochasticDuration
 ## File to be added
 import sys
 sys.path.append("..")
-import monotoinc_align, commons
+import monotonic_align, commons
 
 
 class SynthesizerTrn(nn.Module):
