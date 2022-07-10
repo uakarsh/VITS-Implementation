@@ -2,11 +2,11 @@ import torch.nn as nn
 import torch
 
 import math
-from text_encoder import TextEncoder
-from generator import Generator
-from posterior_encoder import PosteriorEncoder
-from residual_coupling_block import ResidualCouplingBlock
-from stochastic_duration_predictor import DurationPredictor, StochasticDurationPredictor
+from .text_encoder import TextEncoder
+from .generator import Generator
+from .posterior_encoder import PosteriorEncoder
+from .residual_coupling_block import ResidualCouplingBlock
+from .stochastic_duration_predictor import DurationPredictor, StochasticDurationPredictor
 
 ## File to be added
 from .. import monotoinc_align
