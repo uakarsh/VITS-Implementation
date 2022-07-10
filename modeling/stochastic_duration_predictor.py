@@ -28,7 +28,7 @@ class StochasticDurationPredictor(nn.Module):
 
         self.log_flow = modules.Log()
         self.flows = nn.ModuleList()
-        self.flows.append(modules.ElementWiseAffine(2))
+        self.flows.append(modules.ElementwiseAffine(2))
 
         for i in range(n_flows):
             self.flows.append(modules.ConvFlow(
