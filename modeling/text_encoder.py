@@ -1,5 +1,9 @@
 import torch.nn as nn
-from .. import attentions
+
+import sys
+sys.path.append("..")
+
+import attentions
 import torch
 
 class TextEncoder(nn.Module):
