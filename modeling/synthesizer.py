@@ -14,31 +14,31 @@ from .. import commons
 
 
 class SynthesizerTrn(nn.Module):
-      """
+  """
   Synthesizer for Training
   """
 
   def __init__(self, 
-                n_vocab,
-                spec_channels,
-                segment_size,
-                inter_channels,
-                hidden_channels,
-                filter_channels,
-                n_heads,
-                n_layers,
-                kernel_size,
-                p_dropout,
-                resblock, 
-                resblock_kernel_sizes, 
-                resblock_dilation_sizes, 
-                upsample_rates, 
-                upsample_initial_channel, 
-                upsample_kernel_sizes,
-                n_speakers=0,
-                gin_channels=0,
-                use_sdp=True,
-                **kwargs):
+    n_vocab,
+    spec_channels,
+    segment_size,
+    inter_channels,
+    hidden_channels,
+    filter_channels,
+    n_heads,
+    n_layers,
+    kernel_size,
+    p_dropout,
+    resblock, 
+    resblock_kernel_sizes, 
+    resblock_dilation_sizes, 
+    upsample_rates, 
+    upsample_initial_channel, 
+    upsample_kernel_sizes,
+    n_speakers=0,
+    gin_channels=0,
+    use_sdp=True,
+    **kwargs):
 
     super().__init__()
     self.n_vocab = n_vocab
