@@ -1,10 +1,11 @@
+import sys
+sys.path.append("..")
+
 import torch.nn as nn
-from .. import modules
+import modules, commons
 from torch.nn.utils import weight_norm, remove_weight_norm, spectral_norm
 from torch.nn import functional as F
 import torch
-
-from .. import commons
 from commons import init_weights
 
 class Generator(nn.Module):
