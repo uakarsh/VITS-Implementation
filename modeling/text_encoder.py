@@ -3,7 +3,7 @@ from .. import attentions
 import torch
 
 class TextEncoder(nn.Module):
-      def __init__(self,
+    def __init__(self,
                     n_vocab,
                     out_channels,
                     hidden_channels,
