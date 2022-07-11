@@ -1,10 +1,11 @@
+import sys
+sys.path.append("..")
+
 import torch.nn as nn
-from .. import modules
+import modules, commons
 from torch.nn.utils import weight_norm, remove_weight_norm, spectral_norm
 from torch.nn import functional as F
 import torch
-
-from .. import commons
 from commons import init_weights
 
 class Generator(nn.Module):
@@ -27,7 +28,7 @@ class Generator(nn.Module):
             for j, (k, d) in enumerate(zip(resblock_kernel_sizes, resblock_dilation_sizes)):
                 self.resblocks.append(resblock(ch, k, d))
 
-        self.conv_post = Conv1d(ch, 1, 7, 1, padding=3, bias=False)
+        self.conv_post = nn.Conv1d(ch, 1, 7, 1, padding=3, bias=False)
         self.ups.apply(init_weights)
 
         if gin_channels != 0:

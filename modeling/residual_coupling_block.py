@@ -1,5 +1,8 @@
+import sys
+sys.path.append("..")
+
 import torch.nn as nn
-from .. import modules
+import modules
 
 class ResidualCouplingBlock(nn.Module):
     def __init__(self,

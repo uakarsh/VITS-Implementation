@@ -1,9 +1,15 @@
 import torch.nn as nn
-from .. import attentions
+
+import sys
+sys.path.append("..")
+import commons
+
+import attentions
 import torch
+import math
 
 class TextEncoder(nn.Module):
-      def __init__(self,
+    def __init__(self,
                     n_vocab,
                     out_channels,
                     hidden_channels,

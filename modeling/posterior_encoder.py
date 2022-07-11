@@ -1,8 +1,10 @@
 ## Reference: https://github.com/jaywalnut310/vits/blob/2e561ba58618d021b5b8323d3765880f7e0ecfdb/models.py#L212
 
+import sys
+sys.path.append("..")
+import commons, modules
+
 import torch.nn as nn
-from .. import commons
-from .. import modules
 import torch
 
 '''

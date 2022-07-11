@@ -1,10 +1,13 @@
 import torch.nn as nn
 from torch.nn.utils import weight_norm, remove_weight_norm, spectral_norm
-from .. import modules
+
+import sys
+sys.path.append("..")
+
+import modules
 from torch.nn import functional as F
 import torch
-
-from .. import commons
+import commons
 from commons import get_padding
 
 # DiscriminatorP
