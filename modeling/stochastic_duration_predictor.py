@@ -32,7 +32,7 @@ class StochasticDurationPredictor(nn.Module):
 
         for i in range(n_flows):
             self.flows.append(modules.ConvFlow(
-                2, filter_channels, kernel_size, n_layer=3))
+                2, filter_channels, kernel_size, n_layers=3))
             self.flows.append(modules.Flip())
 
         self.post_pre = nn.Conv1d(1, filter_channels, 1)
