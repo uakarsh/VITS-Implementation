@@ -9,6 +9,7 @@ from torch.nn import functional as F
 import torch
 import commons
 from commons import get_padding
+from torch.nn import Conv1d, ConvTranspose1d, AvgPool1d, Conv2d
 
 # DiscriminatorP
 # reference: https://github.com/jaywalnut310/vits/blob/2e561ba58618d021b5b8323d3765880f7e0ecfdb/models.py#L299
