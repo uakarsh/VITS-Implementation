@@ -2,6 +2,7 @@ import torch.nn as nn
 
 import sys
 sys.path.append("..")
+import commons
 
 import attentions
 import torch
