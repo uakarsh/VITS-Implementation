@@ -5,6 +5,7 @@ sys.path.append("..")
 
 import attentions
 import torch
+import math
 
 class TextEncoder(nn.Module):
     def __init__(self,
