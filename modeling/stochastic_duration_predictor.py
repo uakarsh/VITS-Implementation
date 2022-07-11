@@ -4,6 +4,7 @@ sys.path.append("..")
 import torch.nn as nn
 import modules
 import torch
+from torch.nn import functional as F
 import math
 
 class StochasticDurationPredictor(nn.Module):
